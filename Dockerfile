@@ -17,6 +17,4 @@ COPY entrypoint.sh /
 RUN chmod u+x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
-EXPOSE 80 443
-
 CMD ["nginx", "-g", "daemon off;"]
