@@ -8,7 +8,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
     echo "deb http://nginx.org/packages/mainline/debian/ jessie nginx" >> /etc/apt/sources.list && \
     apt-get update
 
-RUN apt-get install -y ca-certificates nginx=1.9.11-1~jessie
+RUN apt-get install -y ca-certificates nginx=1.10.0-1~jessie
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
